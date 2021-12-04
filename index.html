@@ -18,57 +18,63 @@
             <button><img src="/img/lock.png" alt="lock"> Sign In</button>
         </div>
     </header>
-    <div class="logo">
-        <img src="/img/inuit.png" alt="intuit">
-    </div>
-    <div class="icons">
-        <!-- SHOULD THESE BE ULS? -->
-        <img src="/img/mint-logo.svg" alt="mint logo">
-        <img src="/img/mint-name.svg" alt="mint">
-        <img src="/img/quickbooks-logo.svg" alt="quickbooks logo">
-        <img src="/img/quickbooks-name.svg" alt="quickbooks">
-        <img src="/img/turbotax-logo.svg" alt="turbotax logo">
-        <img src="/img/turbotax-name.svg" alt="turbotax">
-    </div>
-    <form action="submit">
-        <div>
-            <h2>Create an Intuit account</h2>
-            <p>One account for everything intuit, including Mint.  <a href="#">Learn more</a></p>
+    <div class="container">
+        <div class="logo">
+            <img src="/img/inuit.png" alt="intuit">
         </div>
-        <fieldset class="user-input">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-        </fieldset>
-        <fieldset class="user-input">
-            <label for="phone">Phone (recommended)</label>
-            <input type="tel" name="phone" id="phone">
-            <p>Standard call, message, or data rates apply.</p>
-        </fieldset>
-        <fieldset class="user-input">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
-        </fieldset>
-        <div>
-            <button><img src="/img/password-lock.png" alt="lock"> Create Account</button>
+        <div class="icons">
+            <!-- SHOULD THESE BE ULS? -->
+            <ul>
+                <li><a href="#"><img src="/img/mint-logo.svg" alt="mint logo"></a></li>
+                <li class="image-text"><a href="#"><img src="/img/mint-name.svg" alt="mint"></a> </li>
+                <li><a href="#"><img src="/img/quickbooks-logo.svg" alt="quickbooks logo"></a></li>
+                <li class="image-text"><a href="#"><img src="/img/quickbooks-name.svg" alt="quickbooks"></a></li>
+                <li><a href="#"><img src="/img/turbotax-logo.svg" alt="turbotax logo"></a></li>
+                <li class="image-text"><a href="#"><img src="/img/turbotax-name.svg" alt="turbotax"></a></li>
+            </ul>            
         </div>
-        <div>
-            By selecting Create accouont, you agree to our <a href="#">Terms </a> and have read and acknowledge our <a href="#">Global Privacy Statement.</a>
-        </div>
+        <form action="submit">
+            <div class="form-header">
+                <h2>Create an Intuit account</h2>
+                <p>One account for everything intuit, including Mint.  <a href="#">Learn more</a></p>
+            </div>
+            <fieldset class="user-input">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </fieldset>
+            <fieldset class="user-input" id="phone">
+                <label for="phone">Phone (recommended)</label>
+                <input type="tel" name="phone" id="phone">
+                <p>Standard call, message, or data rates apply.</p>
+            </fieldset>
+            <fieldset class="user-input" id="password">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </fieldset>
+            <div class="create-account">
+                <button><img src="/img/password-lock.png" alt="lock"> Create Account</button>
+            </div>
+            <div class="agreement">
+                <p>By selecting Create accouont, you agree to our <a href="#">Terms </a> and have read and acknowledge our <a href="#">Global Privacy Statement.</a></p>
+            </div>
+        
+        </form>
         <div class="captcha">
-            Invisible reCAPTCHA by Google <a href="#">Privacy Policy </a>and <a href="#">Terms of Use.</a>
+            <p>Invisible reCAPTCHA by Google <a href="#">Privacy Policy </a>and <a href="#">Terms of Use.</a></p>
         </div>
-    </form>
+        
+    </div>
     <div class="legal">
         <ul>
-            <li>Legal</li>
-            <li>Privacy</li>
-            <li>Security</li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Security</a></li>
         </ul>
         <p>2021 Intuit, Inc. All rights reserved.  Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.</p>
         <p>Terms and conditions, features, support, pricing, and service options subject to change without notice.</p>
     </div>
     <footer>
-        <a href="#"Privacy Settings></a>
+        <a href="#">Privacy Settings</a>
     </footer>
     
 </body>

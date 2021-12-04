@@ -1,4 +1,12 @@
 :root {
+  --color-background-ltGrey: #eceef1;
+  --color-text-black: #000000;
+  --color-text-grey: #505050;
+  --color-text-white: #ffffff;
+  --color-universal-warningBlue: #0077c5;
+  --color-background-white: #fff;
+  --color-text-black: #393a3d;
+  --color-text-darkGrey: #404040;
 }
 
 * {
@@ -6,3 +14,239 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+  color: var(--color-universal-warningBlue);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 26px;
+  color: var(--color-text-darkGrey);
+}
+
+input {
+  width: 100%;
+  border: 1px solid var(--color-text-darkGrey);
+  border-radius: 2px;
+  padding: 6px 8px;
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+input:focus,
+input:active {
+  outline-color: var(--color-universal-warningBlue);
+}
+
+body {
+  background-color: var(--color-background-ltGrey);
+  overflow-y: scroll;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  width: 100vw;
+}
+
+/* ********* START HEADER ********** */
+header {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding: 10px 30px;
+  color: var(--color-text-grey);
+}
+
+header div {
+  margin-left: 10px;
+}
+
+header div a {
+  color: var(--color-universal-warningBlue);
+  text-decoration: none;
+}
+
+header button {
+  background-color: var(--color-universal-warningBlue);
+  color: var(--color-text-white);
+  padding: 2px 20px;
+  font-size: 13.5px;
+  border-radius: 4px;
+}
+
+header button img {
+  width: 16px;
+  height: 20px;
+  margin-right: 6px;
+}
+
+/* ********* END HEADER ********** */
+
+/* ********* START BODY ********** */
+.container {
+  width: 378px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.logo img {
+  height: 35px;
+}
+
+.icons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 4px;
+  margin-bottom: 20px;
+}
+
+.icons ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons ul li {
+  list-style-type: none;
+}
+
+.icons img {
+  height: 23px;
+  margin-right: 4px;
+}
+
+.image-text {
+  margin-right: 10px;
+}
+
+/* ***** START FORM ***** */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-background-white);
+  color: var(--color-text-black);
+  padding: 30px;
+  border: 1px solid var(--color-text-grey);
+  border-bottom: none;
+  border-radius: 2px;
+}
+
+.form-header {
+  text-align: center;
+  font-weight: 400;
+}
+
+.form-header h2 {
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.form-header p {
+  font-size: 14px;
+  text-align: center;
+  margin: 20px 20px;
+}
+
+#phone p {
+  font-size: 10px;
+}
+
+.create-account {
+  width: 100%;
+}
+
+.create-account button {
+  width: 100%;
+  padding: 6px 12px;
+  background-color: var(--color-universal-warningBlue);
+  color: var(--color-text-white);
+  font-size: 15.75px;
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 26px;
+}
+
+.create-account button img {
+  height: 15.75px;
+  margin-right: 5px;
+}
+
+.agreement {
+  font-style: italic;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.agreement p {
+  line-height: 20px;
+  text-align: center;
+}
+
+.captcha {
+  width: 100%;
+  border: 1px solid var(--color-text-grey);
+  border-top: none;
+  border-radius: 2px;
+  background-color: var(--color-background-ltGrey);
+  color: var(--color-text-black);
+  font-size: 12px;
+  margin-bottom: 12px;
+  font-size: 10px;
+  padding: 16px 30px;
+}
+
+.captcha p {
+  line-height: 20px;
+  text-align: center;
+}
+/* ***** END FORM *****  */
+
+/* ***** START LEGAL ***** */
+.legal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 30px;
+  color: var(--color-text-grey);
+}
+
+.legal ul {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.legal ul li {
+  list-style: none;
+}
+
+.legal ul li a {
+  color: var(--color-text-grey);
+}
+
+.legal p {
+  text-align: center;
+  margin: 2px 0;
+  line-height: 1.2rem;
+}
+/* ***** END LEGAL *****  */
+
+footer {
+  height: 61px;
+  background-color: var(--color-background-white);
+  padding: 20px;
+  margin-top: 72px;
+}
+/* ********* END BODY ********** */
